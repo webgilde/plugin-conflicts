@@ -116,8 +116,6 @@ class Plugin_Conflicts_Admin {
                 unset( $settings['reset'] );
             }
             
-            error_log(print_r($settings, true));
-            
             return $settings;
         }
         
