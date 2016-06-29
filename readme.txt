@@ -23,9 +23,11 @@ This plugin is meant to help those who get asked by support to find a plugin con
 1. Activate the plugin through the 'Plugins' menu in WordPress
 1. Go to 'Tools > Debug Plugins' to set up which plugins to test
 
-== Instructions ==
+**Instructions and important Notes**
 
-* remove mu-plugins/plugin-conflicts-mu.php when you have issues
+Not tested on multisites. Please send me feedback if you did.
+
+If you have an issue with the plugins not being activated correctly then remove mu-plugins/plugin-conflicts-mu.php when you have issues
 
 == Changelog ==
 
