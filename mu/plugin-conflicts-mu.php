@@ -41,20 +41,19 @@ class Plugin_Conflicts_MU{
                         return $active_plugins;
                 }
 
-
                 // switch through plugin states
                 if( isset( $options[ 'plugins'] ) && is_array( $options[ 'plugins'] ) ){
                     
                         foreach( $options[ 'plugins'] as $_plugin => $_state ){
                                 switch( $_state ){
                                         case 'active' : // activate plugin
-                                            if( ! isset( $active_plugins[ $_plugin ] ) ){
+                                            if( ! in_array( $_plugin, $active_plugins ) ){
                                                     $active_plugins[] = $_plugin;
                                             }
                                             break;
                                         case 'inactive' : // deactivate plugin
-                                            if( isset( $active_plugins[ $_plugin ] ) ){
-                                                    unset( $active_plugins[ $_plugin ] );
+                                            if( FALSE !== $_plugin_key = array_search( $_plugin, $active_plugins ) ){
+                                                    unset( $active_plugins[ $_plugin_key ] );
                                             }
                                             break;
                                 }
