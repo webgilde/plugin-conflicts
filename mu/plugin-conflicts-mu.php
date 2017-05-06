@@ -33,13 +33,13 @@ class Plugin_Conflicts_MU{
                     return $active_plugins;
                 }
 
-                // get options
-                $options = get_option( 'plugin-conflicts' );
-
                 // check if enabled
                 if( ! isset( $_COOKIE['plugin_conflicts_enabled'] ) ){
                         return $active_plugins;
                 }
+                
+                // get options
+                $options = get_option( 'plugin-conflicts' );
 
                 // switch through plugin states
                 if( isset( $options[ 'plugins'] ) && is_array( $options[ 'plugins'] ) ){
