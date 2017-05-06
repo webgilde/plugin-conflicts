@@ -81,8 +81,6 @@ class Plugin_Conflicts {
 			@mkdir( WPMU_PLUGIN_DIR );
 		}*/
 
-                error_log('test');
-            
 		if ( file_exists( WPMU_PLUGIN_DIR . "/plugin-conflicts-mu.php" ) ) {
 			unlink(WPMU_PLUGIN_DIR . "/plugin-conflicts-mu.php");
 		}

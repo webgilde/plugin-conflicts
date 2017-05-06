@@ -7,7 +7,7 @@
  * Description:       Find conflicts between plugins – needed mu version of Plugin Conflicts plugin
  * Version:           1.0.0
  * Author:            Thomas Maier
- * Author URI:        http://webgilde.com
+ * Author URI:        https://webgilde.com
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  */
