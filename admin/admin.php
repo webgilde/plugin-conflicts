@@ -57,7 +57,7 @@ class Plugin_Conflicts_Admin {
 	 */
 	public function add_menu_page() {
 
-		$this->plugin_screen_hook_suffix = add_management_page( __( 'Debug Plugin conflicts', 'plugin-conflicts' ), __( 'Plugin Conflicts', 'plugin-conflicts' ), 'manage_options', PC_SLUG, array(
+		$this->plugin_screen_hook_suffix = add_plugins_page( __( 'Debug Plugin conflicts', 'plugin-conflicts' ), __( 'Plugin Conflicts', 'plugin-conflicts' ), 'manage_options', PC_SLUG, array(
 			$this,
 			'render_menu_page'
 		) );
